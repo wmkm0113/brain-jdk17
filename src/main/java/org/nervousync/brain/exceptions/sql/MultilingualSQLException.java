@@ -68,44 +68,6 @@ public final class MultilingualSQLException extends SQLException {
 
 	/**
 	 * <h4 class="en-US">Constructor method for MultilingualSQLException</h4>
-	 * <span class="en-US">Create a new MultilingualSQLException with the specified message.</span>
-	 * <h4 class="zh-CN">MultilingualSQLException构造方法</h4>
-	 * <span class="zh-CN">使用特定的信息创建MultilingualSQLException实例对象。</span>
-	 *
-	 * @param errorCode   <span class="en-US">Error identified code</span>
-	 *                    <span class="zh-CN">错误识别代码</span>
-	 * @param SQLState    <span class="en-US">an XOPEN or SQL:2003 code identifying the exception</span>
-	 *                    <span class="zh-CN">标识异常的 XOPEN 或 SQL:2003 代码</span>
-	 * @param collections <span class="en-US">given parameters of information formatter</span>
-	 *                    <span class="zh-CN">用于资源信息格式化的参数</span>
-	 */
-	public MultilingualSQLException(final long errorCode, String SQLState, final Object... collections) {
-		super(Globals.DEFAULT_VALUE_STRING, SQLState);
-		this.detailMessage = this.multiAgent.errorMessage(errorCode, collections);
-	}
-
-	/**
-	 * <h4 class="en-US">Constructor method for MultilingualSQLException</h4>
-	 * <span class="en-US">Create a new MultilingualSQLException with the specified message.</span>
-	 * <h4 class="zh-CN">MultilingualSQLException构造方法</h4>
-	 * <span class="zh-CN">使用特定的信息创建MultilingualSQLException实例对象。</span>
-	 *
-	 * @param errorCode   <span class="en-US">Error identified code</span>
-	 *                    <span class="zh-CN">错误识别代码</span>
-	 * @param SQLState    <span class="en-US">an XOPEN or SQL:2003 code identifying the exception</span>
-	 *                    <span class="zh-CN">标识异常的 XOPEN 或 SQL:2003 代码</span>
-	 * @param vendorCode  <span class="en-US">数据库供应商特定的异常代码</span>
-	 *                    <span class="zh-CN">错误识别代码</span>
-	 * @param collections <span class="en-US">given parameters of information formatter</span>
-	 *                    <span class="zh-CN">用于资源信息格式化的参数</span>
-	 */
-	public MultilingualSQLException(final long errorCode, String SQLState, int vendorCode, final Object... collections) {
-		super(Globals.DEFAULT_VALUE_STRING, SQLState, vendorCode);
-		this.detailMessage = this.multiAgent.errorMessage(errorCode, collections);
-	}
-
-	/**
-	 * <h4 class="en-US">Constructor method for MultilingualSQLException</h4>
 	 * <span class="en-US">Create a new MultilingualSQLException with the specified message and root cause.</span>
 	 * <h4 class="zh-CN">MultilingualSQLException构造方法</h4>
 	 * <span class="zh-CN">使用特定的信息以及异常信息对象实例创建MultilingualSQLException实例对象。</span>

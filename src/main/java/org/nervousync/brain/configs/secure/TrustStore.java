@@ -29,7 +29,7 @@ import java.io.Serial;
  * <h2 class="zh-CN">信任证书库配置信息</h2>
  *
  * @author Steven Wee	<a href="mailto:wmkm0113@gmail.com">wmkm0113@gmail.com</a>
- * @version $Revision : 1.0 $ $Date: Jul 12, 2020 16:22:41 $
+ * @version $Revision: 1.0.0 $ $Date: Jul 12, 2020 16:22:41 $
  */
 @XmlType(name = "trust_store", namespace = "https://nervousync.org/schemas/database")
 @XmlRootElement(name = "trust_store", namespace = "https://nervousync.org/schemas/database")
@@ -53,8 +53,8 @@ public final class TrustStore extends BeanObject {
 	 * <span class="en-US">Trust certificate store password</span>
 	 * <span class="zh-CN">信任证书库密码</span>
 	 */
-	@XmlElement(name = "store_password")
 	@Password
+	@XmlElement(name = "store_password")
 	private String trustStorePassword = Globals.DEFAULT_VALUE_STRING;
 
 	/**

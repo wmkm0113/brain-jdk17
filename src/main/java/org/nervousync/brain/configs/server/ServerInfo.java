@@ -29,7 +29,7 @@ import java.io.Serial;
  * <h2 class="zh-CN">服务器配置信息</h2>
  *
  * @author Steven Wee	<a href="mailto:wmkm0113@gmail.com">wmkm0113@gmail.com</a>
- * @version $Revision : 1.0 $ $Date: Dec 12, 2020 09:27:39 $
+ * @version $Revision: 1.0.0 $ $Date: Dec 12, 2020 09:27:39 $
  */
 @XmlType(name = "server_info", namespace = "https://nervousync.org/schemas/database")
 @XmlRootElement(name = "server_info", namespace = "https://nervousync.org/schemas/database")
@@ -145,12 +145,12 @@ public final class ServerInfo extends BeanObject {
 	public String info() {
 		StringBuilder stringBuilder = new StringBuilder();
 		if (IPUtils.isIPv6Address(this.serverAddress)) {
-			stringBuilder.append("[").append(this.serverAddress).append("]");
+			stringBuilder.append("[").append(this.getServerAddress()).append("]");
 		} else {
-			stringBuilder.append(this.serverAddress);
+			stringBuilder.append(this.getServerAddress());
 		}
 		if (this.serverPort > Globals.INITIALIZE_INT_VALUE) {
-			stringBuilder.append(":").append(this.serverPort);
+			stringBuilder.append(":").append(this.getServerPort());
 		}
 		return stringBuilder.toString();
 	}

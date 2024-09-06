@@ -26,7 +26,7 @@ import java.lang.annotation.*;
  * <h2 class="zh-CN">数据库方言注解定义</h2>
  *
  * @author Steven Wee	<a href="mailto:wmkm0113@gmail.com">wmkm0113@gmail.com</a>
- * @version $Revision : 1.0 $ $Date: Jun 25, 2018 08:42:51 $
+ * @version $Revision: 1.0.0 $ $Date: Jun 25, 2018 08:42:51 $
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})

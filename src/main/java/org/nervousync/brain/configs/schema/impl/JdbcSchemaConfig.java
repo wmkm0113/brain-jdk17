@@ -32,7 +32,7 @@ import java.util.List;
  * <h2 class="zh-CN">关系型数据源配置信息</h2>
  *
  * @author Steven Wee	<a href="mailto:wmkm0113@gmail.com">wmkm0113@gmail.com</a>
- * @version $Revision : 1.0 $ $Date: Jul 12, 2020 16:42:35 $
+ * @version $Revision: 1.0.0 $ $Date: Jul 12, 2020 16:42:35 $
  */
 @XmlType(name = "jdbc_schema", namespace = "https://nervousync.org/schemas/database")
 @XmlRootElement(name = "jdbc_schema", namespace = "https://nervousync.org/schemas/database")

@@ -31,7 +31,7 @@ import java.io.Serial;
  * <h2 class="zh-CN">认证信息抽象类</h2>
  *
  * @author Steven Wee	<a href="mailto:wmkm0113@gmail.com">wmkm0113@gmail.com</a>
- * @version $Revision : 1.0 $ $Date: Apr 10, 2018 15:44:07 $
+ * @version $Revision: 1.0.0 $ $Date: Apr 10, 2018 15:44:07 $
  */
 @XmlType(namespace = "https://nervousync.org/schemas/database")
 @XmlSeeAlso({TrustStoreAuthentication.class, UserAuthentication.class, X509Authentication.class})

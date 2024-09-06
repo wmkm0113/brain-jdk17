@@ -30,7 +30,7 @@ import java.util.List;
  * <h2 class="zh-CN">分布式数据源配置信息</h2>
  *
  * @author Steven Wee	<a href="mailto:wmkm0113@gmail.com">wmkm0113@gmail.com</a>
- * @version $Revision : 1.0 $ $Date: Jul 12, 2020 16:55:07 $
+ * @version $Revision: 1.0.0 $ $Date: Jul 12, 2020 16:55:07 $
  */
 @XmlType(name = "distribute_schema", namespace = "https://nervousync.org/schemas/database")
 @XmlRootElement(name = "distribute_schema", namespace = "https://nervousync.org/schemas/database")
@@ -97,8 +97,7 @@ public final class DistributeSchemaConfig extends SchemaConfig {
 	 * <h4 class="en-US">Getter method for database name</h4>
 	 * <h4 class="zh-CN">数据库名称的Getter方法</h4>
 	 *
-	 * @return
-	 * <span class="en-US">Database name</span>
+	 * @return <span class="en-US">Database name</span>
 	 * <span class="zh-CN">数据库名称</span>
 	 */
 	public String getDatabaseName() {
@@ -109,9 +108,8 @@ public final class DistributeSchemaConfig extends SchemaConfig {
 	 * <h4 class="en-US">Setter method for database name</h4>
 	 * <h4 class="zh-CN">数据库名称的Setter方法</h4>
 	 *
-	 * @param databaseName
-	 * <span class="en-US">Database name</span>
-	 * <span class="zh-CN">数据库名称</span>
+	 * @param databaseName <span class="en-US">Database name</span>
+	 *                     <span class="zh-CN">数据库名称</span>
 	 */
 	public void setDatabaseName(final String databaseName) {
 		this.databaseName = databaseName;
@@ -121,8 +119,7 @@ public final class DistributeSchemaConfig extends SchemaConfig {
 	 * <h4 class="en-US">Getter method for using SSL when connect to server</h4>
 	 * <h4 class="zh-CN">使用SSL连接的Getter方法</h4>
 	 *
-	 * @return
-	 * <span class="en-US">Using SSL when connect to server</span>
+	 * @return <span class="en-US">Using SSL when connect to server</span>
 	 * <span class="zh-CN">使用SSL连接</span>
 	 */
 	public boolean isUseSsl() {
@@ -133,9 +130,8 @@ public final class DistributeSchemaConfig extends SchemaConfig {
 	 * <h4 class="en-US">Setter method for using SSL when connect to server</h4>
 	 * <h4 class="zh-CN">使用SSL连接的Setter方法</h4>
 	 *
-	 * @param useSsl
-	 * <span class="en-US">Using SSL when connect to server</span>
-	 * <span class="zh-CN">使用SSL连接</span>
+	 * @param useSsl <span class="en-US">Using SSL when connect to server</span>
+	 *               <span class="zh-CN">使用SSL连接</span>
 	 */
 	public void setUseSsl(final boolean useSsl) {
 		this.useSsl = useSsl;

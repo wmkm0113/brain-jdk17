@@ -30,7 +30,7 @@ import java.io.Serial;
  * <h2 class="zh-CN">使用证书库中X.509证书的认证信息</h2>
  *
  * @author Steven Wee	<a href="mailto:wmkm0113@gmail.com">wmkm0113@gmail.com</a>
- * @version $Revision : 1.0 $ $Date: Apr 10, 2018 15:48:19 $
+ * @version $Revision: 1.0.0 $ $Date: Apr 10, 2018 15:48:19 $
  */
 @XmlType(name = "trust_store_authentication", namespace = "https://nervousync.org/schemas/database")
 @XmlRootElement(name = "trust_store_authentication", namespace = "https://nervousync.org/schemas/database")
@@ -69,7 +69,7 @@ public final class TrustStoreAuthentication extends Authentication {
 	 * <h4 class="zh-CN">X.509证书认证信息的构造方法</h4>
 	 */
 	public TrustStoreAuthentication() {
-		super(AuthType.CERTIFICATE);
+		super(AuthType.TRUST_STORE);
 	}
 
 	/**

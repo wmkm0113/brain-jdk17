@@ -37,7 +37,7 @@ import java.io.Serial;
  * <h2 class="zh-CN">数据源配置信息抽象类</h2>
  *
  * @author Steven Wee	<a href="mailto:wmkm0113@gmail.com">wmkm0113@gmail.com</a>
- * @version $Revision : 1.0 $ $Date: Jul 12, 2020 16:15:09 $
+ * @version $Revision: 1.0.0 $ $Date: Jul 12, 2020 16:15:09 $
  */
 @XmlType(namespace = "https://nervousync.org/schemas/database")
 @XmlSeeAlso({DistributeSchemaConfig.class, JdbcSchemaConfig.class, RemoteSchemaConfig.class})

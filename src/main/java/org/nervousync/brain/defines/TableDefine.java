@@ -156,7 +156,7 @@ public record TableDefine(String tableName, String shardingTemplate, List<Column
 	 */
 	public void validate(@Nonnull final List<ColumnDefine> existColumns) throws TableDefineException {
 		if (existColumns.isEmpty()) {
-			throw new TableDefineException(0x00DB00010004L, this.tableName);
+			throw new TableDefineException(0x00DB00000003L, this.tableName);
 		}
 		List<ColumnDefine> checkedColumns = new ArrayList<>();
 		StringBuilder notFoundColumns = new StringBuilder();
@@ -179,7 +179,7 @@ public record TableDefine(String tableName, String shardingTemplate, List<Column
 						newColumns.append(BrainCommons.DEFAULT_SPLIT_CHARACTER).append(columnDefine.getColumnName()));
 		if (!notFoundColumns.isEmpty() || !modifiedColumns.isEmpty() || !newColumns.isEmpty()) {
 			int start = BrainCommons.DEFAULT_SPLIT_CHARACTER.length();
-			throw new TableDefineException(0x00DB00010005L,
+			throw new TableDefineException(0x00DB00000004L,
 					newColumns.isEmpty() ? newColumns.toString() : newColumns.substring(start),
 					modifiedColumns.isEmpty() ? modifiedColumns.toString() : modifiedColumns.substring(start),
 					notFoundColumns.isEmpty() ? notFoundColumns.toString() : notFoundColumns.substring(start));
